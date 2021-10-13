@@ -1,0 +1,40 @@
+<html>
+
+
+<head></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
+<body>
+<canvas id="myChart"></canvas>
+<script>
+//https://api.myjson.com/bins/164vsm
+$.getJSON("http://localhost/chartsPresence/data1.json", function(data) {
+   var labels = data.actividad[0].datos.map(function(e) {
+      return e[0];
+   });
+   var data = data.actividad[0].datos.map(function(e) {
+      return e[1];
+   });
+
+   var ctx = document.getElementById('myChart').getContext('2d');
+   var chart = new Chart(ctx, {
+      type: 'line',
+	 data: {
+         labels: labels,
+         datasets: [{
+	    label: 'Actividad',
+            backgroundColor: 'rgb(129, 198, 2228)',
+            borderColor: 'rgb(0, 150, 215)',
+            data: data
+         }]
+      },
+      options: {
+         responsive: 'true',
+      }
+   });
+});
+</script>
+</body>
+</html>

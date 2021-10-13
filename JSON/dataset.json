@@ -1,0 +1,10 @@
+{
+"graph": {
+"title" : "Customers today",
+"total" : true,
+"datasequences" : [
+{
+"title" : "Astronomy department",
+"datapoints" : [
+{ "title" : "Amount", "value" : 88 }
+	] } ] } }

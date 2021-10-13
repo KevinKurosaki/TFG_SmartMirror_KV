@@ -1,0 +1,20 @@
+{
+  "actividad": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "account": "123456",
+      "period": "13th July - 13th August",
+      "due_date": "14th September",
+      "datos": [
+        ["Punto1", 17.23],
+        ["Punto2", 17.23],
+        ["Punto3", 17.12],
+        ["Punto4", 20.58],
+        ["Punto5", 17.13],
+        ["Punto6", 18.78],
+        ["Punto7", 17.22]
+      ]
+    }
+  ]
+}
